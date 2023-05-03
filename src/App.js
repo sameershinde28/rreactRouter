@@ -5,6 +5,8 @@ import About from './component/About'
 import Navbar from './component/Navbar'
 // import Page404 from './component/Page404';
 import User from './component/User'
+import Filter from './component/Filter'
+
 export default function App() {
   return (
     <div className="App">
@@ -20,6 +22,7 @@ export default function App() {
 
           <Route path="/contact" element={<h1>Contact</h1>} />
           <Route path="/user/:name" element={<User />} />
+          <Route path="/filter" element={<Filter />}  />
         </Routes>
       </BrowserRouter>
 

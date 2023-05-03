@@ -28,6 +28,11 @@
   color:green;
 }
 
+.navbar .active{
+  color:skyblue;
+  background-color:brown;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
