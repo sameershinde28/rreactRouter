@@ -1,6 +1,8 @@
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 
 export default function About() {
+    const navigate=useNavigate();
+
     return <>
         <h1>about component</h1>
         <p>This is About page of our awesome app</p>
@@ -10,6 +12,8 @@ export default function About() {
             <li><Link to="/user/anil">anil</Link></li>
             <li><Link to="/user/peter">peter</Link></li>
         </ul>
+
+        <button onClick={()=>navigate('/')}>HOME</button>
 
     </>
 }

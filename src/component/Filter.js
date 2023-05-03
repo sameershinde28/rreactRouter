@@ -1,7 +1,7 @@
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams,useNavigate } from "react-router-dom";
 
 export default function Filter(){
-
+    const navigate=useNavigate();
     const[sameer,setSameer]=useSearchParams();
 
     // console.warn(sameer.get('age'));
@@ -21,6 +21,8 @@ export default function Filter(){
         
         <input type="text" onChange={(e)=>setSameer({text:e.target.value,age:10})}
         placeholder="enter text in query"  />
+
+        <button onClick={()=>navigate('/')}>HOME</button>
         
         </div>
 
